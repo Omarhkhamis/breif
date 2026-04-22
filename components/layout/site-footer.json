@@ -1,0 +1,72 @@
+{
+  "description": "وكالة عربية تركّز على بناء صفحات ومواقع تشرح الفكرة جيداً وتدفع الزائر إلى التفاعل بثقة ووضوح.",
+  "quickLinks": {
+    "title": "روابط سريعة",
+    "links": [
+      {
+        "label": "خدماتنا",
+        "href": "#services"
+      },
+      {
+        "label": "أعمال مختارة",
+        "href": "#projects"
+      },
+      {
+        "label": "ابدأ مشروعك",
+        "href": "#cta"
+      }
+    ]
+  },
+  "contactTitle": "تواصل معنا",
+  "contacts": [
+    {
+      "icon": "Globe",
+      "label": "الموقع",
+      "value": "briefagency.co",
+      "href": "https://briefagency.co",
+      "external": true
+    },
+    {
+      "icon": "Mail",
+      "label": "الإيميل",
+      "value": "hello@briefagency.co",
+      "href": "mailto:hello@briefagency.co"
+    },
+    {
+      "icon": "PhoneCall",
+      "label": "الهاتف",
+      "value": "+20 100 000 0000",
+      "href": "tel:+201000000000"
+    },
+    {
+      "icon": "MessageCircleMore",
+      "label": "واتساب",
+      "value": "+20 100 000 0000",
+      "href": "https://wa.me/201000000000",
+      "external": true
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/briefagency",
+      "icon": "InstagramIcon"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/company/briefagency",
+      "icon": "LinkedinIcon"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://facebook.com/briefagency",
+      "icon": "FacebookIcon"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/briefagency",
+      "icon": "XIcon"
+    }
+  ],
+  "copyright": "© 2026 بريف ايجنسي. جميع الحقوق محفوظة."
+}

@@ -1,0 +1,52 @@
+{
+  "allFilterLabel": "الكل",
+  "header": {
+    "eyebrow": "أعمال مختارة",
+    "title": "مشاريع بصرياً قوية ومبنية لتوضيح العرض بسرعة.",
+    "copy": "تصفّح الأعمال حسب التصنيف، وشاهد نماذج لمشاريع تحافظ على الهوية البصرية وتعرض المشروع بصورة أوضح وأكثر مباشرة."
+  },
+  "items": [
+    {
+      "domain": "تجارة إلكترونية",
+      "title": "واجهة متجر أثاث فاخر",
+      "image": "https://picsum.photos/seed/brief-ecom-1/1200/900",
+      "result": "زيادة المبيعات بنسبة 180% خلال 3 أشهر",
+      "background": "linear-gradient(145deg, #081c3a 0%, #0d55d6 48%, #19c3d6 100%)"
+    },
+    {
+      "domain": "تجارة إلكترونية",
+      "title": "صفحة هبوط لعلامة عناية شخصية",
+      "image": "https://picsum.photos/seed/brief-ecom-2/1200/900",
+      "result": "تحسين مسار الشراء ورفع الطلبات المباشرة",
+      "background": "linear-gradient(145deg, #0b1a33 0%, #1555c8 46%, #3bd3da 100%)"
+    },
+    {
+      "domain": "حلول مالية",
+      "title": "منصة اشتراكات رقمية",
+      "image": "https://picsum.photos/seed/brief-finance-1/1200/900",
+      "result": "خفض معدل الارتداد بنسبة 45%",
+      "background": "linear-gradient(145deg, #071a24 0%, #0d7288 46%, #5bd8b1 100%)"
+    },
+    {
+      "domain": "حلول مالية",
+      "title": "خدمة محاسبة سحابية",
+      "image": "https://picsum.photos/seed/brief-finance-2/1200/900",
+      "result": "رفع جودة الطلبات الواردة من الصفحة الرئيسية",
+      "background": "linear-gradient(145deg, #061922 0%, #0d6e8a 44%, #47cdb8 100%)"
+    },
+    {
+      "domain": "خدمات احترافية",
+      "title": "هوية رقمية لوكالة استشارية",
+      "image": "https://picsum.photos/seed/brief-service-1/1200/900",
+      "result": "مضاعفة طلبات التواصل المؤهلة",
+      "background": "linear-gradient(145deg, #28120a 0%, #af4d13 45%, #f0b24a 100%)"
+    },
+    {
+      "domain": "خدمات احترافية",
+      "title": "موقع تعريفي لشركة قانونية",
+      "image": "https://picsum.photos/seed/brief-service-2/1200/900",
+      "result": "زيادة الحجوزات والاستفسارات المؤهلة",
+      "background": "linear-gradient(145deg, #221109 0%, #b76518 42%, #efbb58 100%)"
+    }
+  ]
+}

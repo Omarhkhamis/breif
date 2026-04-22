@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>إيثر الرقمية | وكالة تصميم المواقع المرتكزة على التحويل</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Arabic:wght@300;400;500;600;700&amp;family=Cairo:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#feffff",
+                    "on-tertiary-fixed": "#001f24",
+                    "surface-container-low": "#f2f4f7",
+                    "surface-bright": "#f7f9fc",
+                    "on-primary-container": "#fffeff",
+                    "surface-tint": "#0054d7",
+                    "on-secondary-fixed-variant": "#144296",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#00388c",
+                    "primary-container": "#1e6bff",
+                    "on-surface": "#191c1e",
+                    "tertiary-fixed-dim": "#00daf3",
+                    "secondary": "#345baf",
+                    "surface-dim": "#d8dadd",
+                    "surface-container": "#eceef1",
+                    "secondary-container": "#83a6ff",
+                    "on-tertiary-fixed-variant": "#004f58",
+                    "on-error": "#ffffff",
+                    "primary": "#0053d4",
+                    "surface": "#f7f9fc",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#b1c5ff",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#006774",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c2c6d8",
+                    "inverse-surface": "#2d3133",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#dbe1ff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#001849",
+                    "tertiary-fixed": "#9cf0ff",
+                    "inverse-on-surface": "#eff1f4",
+                    "on-secondary-fixed": "#001947",
+                    "secondary-fixed": "#dae2ff",
+                    "inverse-primary": "#b3c5ff",
+                    "outline": "#737687",
+                    "surface-container-high": "#e6e8eb",
+                    "on-primary-fixed-variant": "#003fa5",
+                    "on-background": "#191c1e",
+                    "tertiary-container": "#008291",
+                    "on-surface-variant": "#424655",
+                    "surface-variant": "#e0e3e6",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "background": "#f7f9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["IBM Plex Arabic", "sans-serif"],
+                    "body": ["Cairo", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(194, 198, 216, 0.2);
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f7f9fc;
+            color: #191c1e;
+        }
+        h1, h2, h3 {
+            font-family: 'IBM Plex Arabic', sans-serif;
+        }
+        .cyan-glow {
+            box-shadow: 0 32px 48px -12px rgba(0, 103, 116, 0.08);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0053d4 0%, #1e6bff 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-blue-500/10 shadow-[0_10px_30px_-15px_rgba(0,103,116,0.1)]">
+<nav class="flex flex-row-reverse justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto font-['IBM_Plex_Arabic'] font-medium">
+<div class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-blue-700 to-blue-500">
+                إيثر الرقمية
+            </div>
+<div class="hidden md:flex flex-row-reverse gap-8 items-center">
+<a class="text-blue-700 border-b-2 border-blue-600 pb-1" href="#">الرئيسية</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#">خدماتنا</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#">فلسفتنا</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#">أعمالنا</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#">تواصل معنا</a>
+</div>
+<button class="bg-gradient-to-l from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-bold active:scale-95 duration-150 shadow-lg shadow-primary/20">
+                ابدأ مشروعك
+            </button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-20 pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative z-10 space-y-8 order-2 md:order-1">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                    نصمم للنتائج، لا للعرض فقط
+                </div>
+<h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight text-on-surface">
+                    اجعل موقعك <span class="text-primary">أداة اتخاذ قرار</span> وليس مجرد واجهة
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    نحن وكالة رقمية متخصصة في بناء تجارب مستخدم تحول الزوار إلى عملاء دائمين من خلال علم النفس التصميمي وهندسة التحويل.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-bold text-lg shadow-xl shadow-primary/25 hover:shadow-2xl transition-all">
+                        ابدأ رحلة التحويل الآن
+                    </button>
+<button class="px-8 py-4 glass-card text-primary rounded-full font-bold text-lg hover:bg-white/90 transition-all">
+                        مشاهدة أعمالنا
+                    </button>
+</div>
+</div>
+<div class="relative order-1 md:order-2 flex justify-center">
+<!-- Abstract Floating UI Mockup -->
+<div class="relative w-full max-w-md aspect-square">
+<div class="absolute inset-0 hero-gradient rounded-3xl rotate-6 opacity-10 blur-2xl"></div>
+<div class="relative glass-card rounded-xl p-6 shadow-2xl border border-white/40 overflow-hidden h-[500px]">
+<img class="w-full h-48 object-cover rounded-xl mb-6 grayscale hover:grayscale-0 transition-all duration-700" data-alt="clean modern dashboard interface with data visualizations and sleek typography on a white minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCisgyKdeyDZp4wEopMsM_Y-emEgafDuD6xmRHnDjteRlGniBiNCh81erJ6J_ffCiw9E7O7osY7xI_5RVppTBBAvdm7QbZiCJJTr4tZNP4TuO0z-jtt7xfIktB5gsgPfSgKZaAIxJ81DyqzbQsHIgQ1ERjHA8h8Tjy3KblxRkl8_FmBe7JodYoAb_ARdMdRN2vIeqFftEqsDKfop34POK0QXNEN0GGtIodtdBfh0p3Bl9UI4GawF-rWWooLz1kXhsGlhD2Kap6YeEQ"/>
+<div class="space-y-4">
+<div class="h-4 w-3/4 bg-on-surface/10 rounded-full"></div>
+<div class="h-4 w-1/2 bg-on-surface/10 rounded-full"></div>
+<div class="grid grid-cols-3 gap-3 pt-4">
+<div class="h-20 bg-primary/5 rounded-xl border border-primary/10"></div>
+<div class="h-20 bg-primary/5 rounded-xl border border-primary/10"></div>
+<div class="h-20 bg-primary/5 rounded-xl border border-primary/10"></div>
+</div>
+</div>
+<!-- Floating Glass Blocks -->
+<div class="absolute -top-6 -right-6 glass-card p-4 rounded-xl cyan-glow border border-tertiary-fixed-dim/30 animate-bounce duration-[3000ms]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<div class="text-[10px] text-slate-500 uppercase font-bold">Conversion Rate</div>
+<div class="text-xl font-bold text-tertiary">+240%</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 -left-8 glass-card p-4 rounded-xl shadow-2xl border border-primary/20">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-3 space-x-reverse">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-300"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-400"></div>
+</div>
+<div class="text-xs font-bold text-slate-700">500+ عميل جديد اليوم</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-2xl mb-16">
+<span class="text-primary font-bold tracking-widest text-sm uppercase block mb-4">التحديات الشائعة</span>
+<h2 class="text-4xl font-bold mb-6">لماذا تفشل معظم المواقع في البيع؟</h2>
+<p class="text-on-surface-variant text-lg">التصميم الجميل وحده لا يكفي. إذا كان موقعك لا يتحدث لغة العميل، فأنت تفقد الفرص كل ثانية.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-b-4 border-transparent hover:border-primary transition-all group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">heart_broken</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">غياب التفاعل</h3>
+<p class="text-on-surface-variant leading-relaxed">الزوار يغادرون موقعك في غضون ثوانٍ دون القيام بأي إجراء حقيقي.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-b-4 border-transparent hover:border-primary transition-all group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">تجربة مستخدم ضعيفة</h3>
+<p class="text-on-surface-variant leading-relaxed">تعقيد في التنقل يجعل العميل يشعر بالإحباط ويخرج من رحلة الشراء.</p>
+</div>
+<!-- Card 3 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-b-4 border-transparent hover:border-primary transition-all group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">show_chart</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">معدل تحويل منخفض</h3>
+<p class="text-on-surface-variant leading-relaxed">تحصل على زيارات كثيرة ولكن المبيعات لا تتناسب مع هذا الحجم.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-24 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-3xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<div class="relative bg-surface-container-lowest p-10 rounded-xl shadow-2xl cyan-glow">
+<h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm">
+<span class="material-symbols-outlined">done_all</span>
+</span>
+                        منهجية إيثر للنمو
+                    </h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" data-weight="fill">check_circle</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">تحليل سلوك المستخدم</h4>
+<p class="text-on-surface-variant text-sm">ندرس الخرائط الحرارية ونقاط الخروج لتحسين كل بكسل.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" data-weight="fill">check_circle</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">كتابة محتوى بيعي (Copywriting)</h4>
+<p class="text-on-surface-variant text-sm">نصوص تخاطب احتياجات العميل مباشرة وتحفزه على الفعل.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" data-weight="fill">check_circle</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">تطوير فائق السرعة</h4>
+<p class="text-on-surface-variant text-sm">مواقع تفتح في لمح البصر لضمان عدم هروب الزوار.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="space-y-8">
+<span class="text-tertiary font-bold tracking-widest text-sm uppercase">الحل الذكي</span>
+<h2 class="text-4xl md:text-5xl font-bold leading-tight">نحول الفضول إلى التزام، والزيارات إلى مبيعات.</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">نحن لا نقوم فقط برسم واجهات جميلة، بل نقوم بهندسة رحلة كاملة تقود العميل من لحظة الاكتشاف إلى لحظة الشراء بنعومة تامة.</p>
+<div class="pt-6">
+<a class="inline-flex items-center gap-3 text-primary font-bold group" href="#">
+                        اكتشف كيف نعمل
+                        <span class="material-symbols-outlined group-hover:translate-x-[-8px] transition-transform">arrow_back</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="py-40 bg-on-surface text-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary blur-[120px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-tertiary blur-[120px] rounded-full"></div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<span class="text-tertiary-fixed-dim font-bold tracking-[0.2em] text-sm uppercase mb-8 block">فلسفتنا</span>
+<blockquote class="text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+                "نحن لا نصمم <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary-fixed to-tertiary-fixed">قوالب جاهزة</span>، بل نصمم تجارب إنسانية تحفز على التغيير."
+            </blockquote>
+<div class="mt-12 flex justify-center">
+<div class="w-20 h-1 bg-gradient-to-l from-primary to-tertiary-fixed-dim rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-bold mb-4">خدماتنا التخصصية</h2>
+<div class="w-24 h-1 bg-primary/20 mx-auto rounded-full overflow-hidden">
+<div class="w-1/2 h-full bg-primary"></div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="p-8 bg-surface-container-low rounded-xl hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block">architecture</span>
+<h3 class="text-xl font-bold mb-3">تصميم UX</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">دراسة رحلة العميل وتخطيط هيكلي يضمن سهولة الوصول للهدف.</p>
+</div>
+<!-- Service 2 -->
+<div class="p-8 bg-surface-container-low rounded-xl hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block">palette</span>
+<h3 class="text-xl font-bold mb-3">أنظمة UI</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">بناء هويات بصرية رقمية متسقة تعكس احترافية علامتك التجارية.</p>
+</div>
+<!-- Service 3 -->
+<div class="p-8 bg-surface-container-low rounded-xl hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block">bolt</span>
+<h3 class="text-xl font-bold mb-3">الأداء الفائق</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">تحسين سرعة التحميل والـ SEO لضمان أعلى ظهور في محركات البحث.</p>
+</div>
+<!-- Service 4 -->
+<div class="p-8 bg-surface-container-low rounded-xl hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block">ads_click</span>
+<h3 class="text-xl font-bold mb-3">استراتيجية التحويل</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">اختبارات A/B وتحليل البيانات لرفع كفاءة موقعك باستمرار.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<h2 class="text-4xl font-bold mb-4">مشاريع أحدثت فرقاً</h2>
+<p class="text-on-surface-variant text-lg">ألقِ نظرة على بعض أعمالنا التي ساعدت الشركات في مضاعفة أرباحها.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+</div>
+<div class="flex gap-8 overflow-x-auto pb-12 px-6 scrollbar-hide snap-x">
+<!-- Project 1 -->
+<div class="min-w-[320px] md:min-w-[450px] group snap-center">
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="sleek luxury furniture e-commerce website design with high-end photography and elegant serif fonts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDN4a8qOsDVAXJgCIPloxo8m7keCgR0zD1i2npJYeUmC-84mZHI1iwVf6cvE-bLQ6l-v1dfiCiIeGT69DlihHN9gGNCsdRbu7u46Rzj-EMKefQh50peTk04FRFSE1fBO4i53TRKX2K5l225CjKDYwxF_4XKacT-a7SzLt5gd3xSjXjTYyeqYfDtTzq7sQB38tdXFs03gjOW3AtPnNU0qB80QztYiAoaco4n3DBMX4ozY2Jc7DvfGzP62ZJTtpt7sWb-tcIRB8ANzI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<span class="text-tertiary-fixed text-xs font-bold uppercase tracking-widest mb-2">E-commerce</span>
+<h4 class="text-2xl font-bold text-white">متجر الأثاث الراقي</h4>
+<p class="text-slate-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">زيادة في المبيعات بنسبة 180% خلال 3 أشهر.</p>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="min-w-[320px] md:min-w-[450px] group snap-center">
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="modern fintech mobile app landing page featuring glassmorphic charts and blue futuristic gradients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8_RPtsOJX-PhNxdx0AORV22pzrNx74GiXhsBnTEaFQXg2tdG2chmYiqHXFOvL13tHJ1jUNQRa4BYcodx_hSDeetycUF_ugm5sRR88RqN9_sJDVyZZkXuIpkZx9NCdEc9FnCtJkpkVCoj72_pnUQkqplcaj_1-TD8GjHBnfsRy40Hcmmf0kOugu8FhxBR7sdtYvrl3SuIDqqSL_IWd6u23o70BCr0S_QhIjdr_8vBwWSWonaHWSqYA5eDt0U3erThjjQrjuFJ3YeM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<span class="text-tertiary-fixed text-xs font-bold uppercase tracking-widest mb-2">Fintech</span>
+<h4 class="text-2xl font-bold text-white">تطبيق "نماء" المالي</h4>
+<p class="text-slate-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">تصميم رحلة تسجيل مستخدم قللت نسبة الارتداد بمقدار 45%.</p>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="min-w-[320px] md:min-w-[450px] group snap-center">
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="creative agency website design showing vibrant colors asymmetric layout and bold display typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Fp5eUpeNZAJqH87r3ge4XzhTyngKo0BkQ9ljuHAPQCbqv_McAbinTiGcevVwf-6WXKGqstWr1u23MdirvhlOWL7qt5H2J3vLn0TksIFGqs-XJ6Ks9RvOtGZQ5JkRE-O5LlsKDXteTZHqg__FFUlS2HEn7eOpyLV5QOIezNOlXhzrKxx0eziuyP4fq9mJvNnCG_YAzG-ls9aIq32e0uib6Lh-vNhEC3qkxhHLAF-4xbLt3lhsYB0KaUdpnZkZ27fndZDOixXc02E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<span class="text-tertiary-fixed text-xs font-bold uppercase tracking-widest mb-2">Corporate</span>
+<h4 class="text-2xl font-bold text-white">مجموعة "رؤية" القابضة</h4>
+<p class="text-slate-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">تجديد هوية رقمية شاملة للشركة وفروعها.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto rounded-xl hero-gradient p-12 md:p-20 text-center relative overflow-hidden shadow-2xl shadow-primary/40">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-bold text-white mb-8">لنصنع لك موقعاً <span class="text-tertiary-fixed">يبيع حقاً</span></h2>
+<p class="text-on-primary-container text-xl md:text-2xl max-w-2xl mx-auto mb-12 opacity-90 font-light">
+                    هل أنت مستعد لتحويل زوارك إلى عملاء؟ احجز جلستك الاستشارية المجانية اليوم.
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="px-10 py-5 bg-white text-primary rounded-full font-extrabold text-xl hover:scale-105 transition-transform shadow-xl">
+                        ابدأ مشروعك الآن
+                    </button>
+<button class="px-10 py-5 bg-transparent border-2 border-white/40 text-white rounded-full font-bold text-xl hover:bg-white/10 transition-all">
+                        تحدث مع خبير
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 w-full py-12">
+<div class="flex flex-col md:flex-row-reverse justify-between items-center px-8 max-w-7xl mx-auto gap-10">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-bold text-2xl text-slate-900">إيثر الرقمية</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">call</span></a>
+<a class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+<div class="flex gap-12 font-['Cairo'] text-sm">
+<div class="flex flex-col gap-3">
+<span class="font-bold text-slate-900 mb-2">الروابط</span>
+<a class="text-slate-500 hover:text-blue-500 hover:underline underline-offset-4" href="#">خدماتنا</a>
+<a class="text-slate-500 hover:text-blue-500 hover:underline underline-offset-4" href="#">أعمالنا</a>
+<a class="text-slate-500 hover:text-blue-500 hover:underline underline-offset-4" href="#">المدونة</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-slate-900 mb-2">قانوني</span>
+<a class="text-slate-500 hover:text-blue-500 hover:underline underline-offset-4" href="#">سياسة الخصوصية</a>
+<a class="text-slate-500 hover:text-blue-500 hover:underline underline-offset-4" href="#">اتفاقية الخدمة</a>
+<a class="text-slate-500 hover:text-blue-500 hover:underline underline-offset-4" href="#">الأسئلة الشائعة</a>
+</div>
+</div>
+<div class="text-slate-500 text-sm font-['Cairo'] max-w-xs text-center md:text-right">
+                © 2024 وكالة إيثر المعمارية. جميع الحقوق محفوظة.
+                <p class="mt-2 text-xs opacity-70">صُنع بشغف في قلب العالم الرقمي.</p>
+</div>
+</div>
+</footer>
+</body></html>

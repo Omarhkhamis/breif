@@ -1,0 +1,28 @@
+{
+  "navLinks": [
+    {
+      "label": "الرئيسية",
+      "href": "#home"
+    },
+    {
+      "label": "خدماتنا",
+      "href": "#services"
+    },
+    {
+      "label": "منهجية العمل",
+      "href": "#process"
+    },
+    {
+      "label": "أعمال مختارة",
+      "href": "#projects"
+    },
+    {
+      "label": "تواصل معنا",
+      "href": "#cta"
+    }
+  ],
+  "cta": {
+    "label": "ابدأ مشروعك",
+    "href": "#cta"
+  }
+}
