@@ -1,5 +1,5 @@
 import { Tajawal } from "next/font/google";
-import content from "./layout.json";
+import { getSiteContent } from "../lib/content-store.js";
 import "./globals.css";
 
 const tajawal = Tajawal({
@@ -8,7 +8,12 @@ const tajawal = Tajawal({
   display: "swap",
 });
 
-export const metadata = content.metadata;
+export const dynamic = "force-dynamic";
+
+export async function generateMetadata() {
+  const content = await getSiteContent();
+  return content.layout?.metadata ?? {};
+}
 
 export default function RootLayout({ children }) {
   return (

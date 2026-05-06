@@ -1,5 +1,4 @@
 import { BarChart3, BrainCircuit, MousePointerClick } from "lucide-react";
-import content from "./problems-section.json";
 import SectionHeader from "./section-header";
 
 const problemIcons = {
@@ -8,7 +7,7 @@ const problemIcons = {
   MousePointerClick,
 };
 
-export default function ProblemsSection() {
+export default function ProblemsSection({ content }) {
   return (
     <section className="section-space" id="problems">
       <div className="shell">

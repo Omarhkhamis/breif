@@ -1,5 +1,4 @@
 import { Blocks, PaintBucket, ShieldCheck, TrendingUp } from "lucide-react";
-import content from "./services-section.json";
 import SectionHeader from "./section-header";
 
 const serviceIcons = {
@@ -9,7 +8,7 @@ const serviceIcons = {
   TrendingUp,
 };
 
-export default function ServicesSection() {
+export default function ServicesSection({ content }) {
   return (
     <section className="section-space" id="services">
       <div className="shell">

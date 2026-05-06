@@ -1,11 +1,10 @@
 import Brand from "../home/brand";
-import content from "./site-header.json";
 
-export default function SiteHeader() {
+export default function SiteHeader({ content, brand }) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/50 bg-white/70 backdrop-blur-2xl">
       <div className="shell flex min-h-20 items-center justify-between gap-6">
-        <Brand />
+        <Brand content={brand} />
         <nav className="hidden items-center gap-7 lg:flex">
           {content.navLinks.map((item) => (
             <a

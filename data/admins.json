@@ -1,0 +1,11 @@
+[
+  {
+    "id": "admin-default",
+    "name": "Admin",
+    "email": "admin@admin.com",
+    "role": "super_admin",
+    "passwordHash": "scrypt:aX5_fov_UuyaXmUaj6eV9Q:zlCifnFc85tVt4GSKlkEnQEzPJDvabxbN9ANE8NezEfM2rXpgJLLsq1EMOawel-LC5n3aleQiIHOWj9UkQRQcQ",
+    "createdAt": "2026-04-30T00:00:00.000Z",
+    "updatedAt": "2026-04-30T00:00:00.000Z"
+  }
+]

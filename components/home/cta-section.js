@@ -1,6 +1,4 @@
-import content from "./cta-section.json";
-
-export default function CtaSection() {
+export default function CtaSection({ content }) {
   return (
     <section className="section-space pt-10" id="cta">
       <div className="shell">

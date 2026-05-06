@@ -1,7 +1,6 @@
 import { ArrowLeft, Check } from "lucide-react";
-import content from "./process-section.json";
 
-export default function ProcessSection() {
+export default function ProcessSection({ content }) {
   return (
     <section className="section-space" id="process">
       <div className="shell grid items-center gap-14 lg:grid-cols-2 lg:gap-24">

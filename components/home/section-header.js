@@ -3,7 +3,7 @@ export default function SectionHeader({ eyebrow, title, copy }) {
     <div className="max-w-3xl space-y-5">
       <span className="eyebrow">{eyebrow}</span>
       <h2 className="section-title">{title}</h2>
-      <p className="section-copy">{copy}</p>
+      {copy ? <p className="section-copy">{copy}</p> : null}
     </div>
   );
 }

@@ -4,13 +4,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "db:init": "node --env-file=.env scripts/init-postgres.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
     "next": "^16.2.4",
+    "pg": "^8.20.0",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "sweetalert2": "^11.26.24"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.16",

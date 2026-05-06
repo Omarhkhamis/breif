@@ -30,22 +30,30 @@
       "icon": "Mail",
       "label": "الإيميل",
       "value": "hello@briefagency.co",
-      "href": "mailto:hello@briefagency.co"
+      "href": "mailto:hello@briefagency.co",
+      "external": true
     },
     {
       "icon": "PhoneCall",
       "label": "الهاتف",
-      "value": "+20 100 000 0000",
+      "value": "+966 00000000",
       "href": "tel:+201000000000"
     },
     {
       "icon": "MessageCircleMore",
       "label": "واتساب",
-      "value": "+20 100 000 0000",
-      "href": "https://wa.me/201000000000",
+      "value": "+966 00000000",
+      "href": "https://wa.me/96600000000",
       "external": true
     }
   ],
+  "address": {
+    "icon": "MapPin",
+    "label": "العنوان",
+    "value": "الرياض - السعودية",
+    "href": "https://maps.google.com/?q=Cairo%2C%20Egypt",
+    "external": true
+  },
   "socialLinks": [
     {
       "label": "Instagram",

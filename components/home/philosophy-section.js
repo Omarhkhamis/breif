@@ -1,6 +1,4 @@
-import content from "./philosophy-section.json";
-
-export default function PhilosophySection() {
+export default function PhilosophySection({ content }) {
   return (
     <section className="section-space relative overflow-hidden bg-[var(--night)] text-white">
       <div

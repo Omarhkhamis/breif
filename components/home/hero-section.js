@@ -1,5 +1,4 @@
 import { ArrowLeft, ArrowUpLeft, Blocks, Sparkles, TrendingUp } from "lucide-react";
-import content from "./hero-section.json";
 
 const highlightIcons = {
   Blocks,
@@ -7,7 +6,7 @@ const highlightIcons = {
   TrendingUp,
 };
 
-export default function HeroSection() {
+export default function HeroSection({ content }) {
   return (
     <section className="relative overflow-hidden pt-8 md:pt-12" id="home">
       <div

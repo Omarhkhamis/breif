@@ -1,5 +1,9 @@
 {
   "href": "#home",
   "englishName": "Brief Agency",
-  "arabicName": "بريف ايجنسي"
+  "arabicName": "بريف ايجنسي",
+  "logo": {
+    "src": "",
+    "alt": "شعار بريف ايجنسي"
+  }
 }
