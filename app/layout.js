@@ -1,4 +1,5 @@
 import { Tajawal } from "next/font/google";
+import CustomCodeInjector from "../components/layout/custom-code-injector";
 import { getSiteContent } from "../lib/content-store.js";
 import "./globals.css";
 
@@ -15,10 +16,20 @@ export async function generateMetadata() {
   return content.layout?.metadata ?? {};
 }
 
-export default function RootLayout({ children }) {
+function getCustomCode(content, key) {
+  const value = content?.customCodes?.[key];
+  return typeof value === "string" ? value : "";
+}
+
+export default async function RootLayout({ children }) {
+  const content = await getSiteContent();
+  const headCode = getCustomCode(content, "headCode");
+  const bodyCode = getCustomCode(content, "bodyCode");
+
   return (
     <html lang="ar" dir="rtl">
       <body className={`${tajawal.className} bg-[var(--bg)] text-[var(--ink)] antialiased`}>
+        <CustomCodeInjector headCode={headCode} bodyCode={bodyCode} />
         {children}
       </body>
     </html>

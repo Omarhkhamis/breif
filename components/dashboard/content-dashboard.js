@@ -6,6 +6,7 @@ import {
   Blocks,
   BrainCircuit,
   CheckCircle2,
+  Code,
   FileText,
   Globe,
   Home,
@@ -42,6 +43,7 @@ import Swal from "sweetalert2";
 
 const tabs = [
   { id: "general", label: "إعدادات عامة", icon: Settings },
+  { id: "customCodes", label: "أكواد مخصصة", icon: Code },
   { id: "gallery", label: "المعرض", icon: Image },
   { id: "admins", label: "الأدمن", icon: UserCog },
   { id: "brand", label: "الهوية", icon: Sparkles },
@@ -261,6 +263,11 @@ function normalizeContent(rawContent) {
   nextContent.siteFooter.contacts = nextContent.siteFooter.contacts ?? [];
   nextContent.siteFooter.socialLinks = nextContent.siteFooter.socialLinks ?? [];
   nextContent.siteFooter.address = nextContent.siteFooter.address ?? defaultAddress;
+  nextContent.customCodes = nextContent.customCodes ?? {};
+  nextContent.customCodes.headCode =
+    typeof nextContent.customCodes.headCode === "string" ? nextContent.customCodes.headCode : "";
+  nextContent.customCodes.bodyCode =
+    typeof nextContent.customCodes.bodyCode === "string" ? nextContent.customCodes.bodyCode : "";
   return nextContent;
 }
 
@@ -1445,10 +1452,46 @@ export default function ContentDashboard({ currentAdmin }) {
     </PanelStack>
   );
 
+  const renderCustomCodesPanel = () => (
+    <PanelStack>
+      <DashboardPanel title="أكواد مخصصة" icon={Code}>
+        <p className="mb-5 text-sm font-bold leading-7 text-slate-500">
+          يمكنك إدخال كود HTML كامل ليتم حقنه في التطبيق كما هو، مثل وسوم
+          <span className="mx-1 rounded bg-slate-100 px-1.5 py-0.5 font-mono text-xs text-slate-700">
+            {`<script>`}
+          </span>
+          أو
+          <span className="mx-1 rounded bg-slate-100 px-1.5 py-0.5 font-mono text-xs text-slate-700">
+            {`<style>`}
+          </span>
+          مع جميع الخصائص.
+        </p>
+        <FormGrid>
+          <Field
+            dir="ltr"
+            label="كود داخل head"
+            multiline
+            value={valueAt(["customCodes", "headCode"])}
+            onChange={(value) => updateField(["customCodes", "headCode"], value)}
+          />
+          <Field
+            dir="ltr"
+            label="كود داخل body"
+            multiline
+            value={valueAt(["customCodes", "bodyCode"])}
+            onChange={(value) => updateField(["customCodes", "bodyCode"], value)}
+          />
+        </FormGrid>
+      </DashboardPanel>
+    </PanelStack>
+  );
+
   const renderActivePanel = () => {
     switch (activeTab) {
       case "general":
         return renderGeneralPanel();
+      case "customCodes":
+        return renderCustomCodesPanel();
       case "gallery":
         return renderGalleryPanel();
       case "admins":
